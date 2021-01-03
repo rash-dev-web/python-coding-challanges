@@ -21,11 +21,24 @@ while len(correct_data) < 50:
     user_guess = answer_start.title()
 
     if user_guess == "Exit":
+        # learn_state = []
+        # for state in state_name:
+        #     if state not in correct_data:
+        #         learn_state.append(state)
+        #
+        # state_to_learn = {
+        #     "states": learn_state,
+        # }
+
+        # using list comprehension
+        missing_state = [state for state in state_name if state not in correct_data]
+        df = pandas.DataFrame(missing_state)
+        df.to_csv("state_to_learn2.csv")
+        # missing_state = [state for state in state_name if state in correct_data]
         break
 
     if user_guess in state_name:
         state_row = state_data[state_data.state == user_guess]
-        # print(state_row)
         x = state_row.x
         y = state_row.y
         new_state.penup()
@@ -33,15 +46,3 @@ while len(correct_data) < 50:
         new_state.write(user_guess)
         correct_data.append(user_guess)
 
-# screen.exitonclick()
-# states to learn.csv
-learn_state = []
-for state in state_name:
-    if state not in correct_data:
-        learn_state.append(state)
-
-state_to_learn = {
-    "states": learn_state,
-}
-df = pandas.DataFrame(state_to_learn)
-df.to_csv("state_to_learn.csv")
