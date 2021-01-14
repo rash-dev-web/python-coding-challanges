@@ -2,7 +2,7 @@ import requests
 import os
 
 API_KEY = os.environ.get("API_KEY")
-# "049978dcd1c41743f2a2fd1761e23934"
+
 URL = "https://api.openweathermap.org/data/2.5/onecall"
 
 weather_parameters = {
