@@ -7,7 +7,7 @@ MY_LAT = 28.613939
 MY_LONG = 77.209023
 
 MY_EMAIL = "pyuserone@gmail.com"
-MY_PWD = "PwbD7HV+l8Q%p"
+MY_PWD = ""
 
 
 def is_iss_overhead():
