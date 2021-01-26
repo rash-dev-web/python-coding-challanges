@@ -1,7 +1,7 @@
 # import smtplib
 #
 # my_email = "pyuserone@gmail.com"
-# my_pwd = "PwbD7HV+l8Q%p"
+# my_pwd = ""
 #
 # with smtplib.SMTP("smtp.gmail.com") as connection:
 #     connection.starttls()
