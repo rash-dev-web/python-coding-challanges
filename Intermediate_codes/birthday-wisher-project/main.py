@@ -5,7 +5,7 @@ import random
 import smtplib
 
 MY_USER = "pyuserone@gmail.com"
-MY_PASSWORD = "PwbD7HV+l8Q%p"
+MY_PASSWORD = ""
 
 # 1. Update the birthdays.csv with your friends & family's details. 
 # HINT: Make sure one of the entries matches today's date for testing purposes. e.g.
