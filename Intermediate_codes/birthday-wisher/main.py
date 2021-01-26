@@ -42,7 +42,7 @@ quote = random.choice(all_quotes)
 
 # use smtplib to send an email with the selected quote
 my_email = "pyuserone@gmail.com"
-my_pwd = "PwbD7HV+l8Q%p"
+my_pwd = ""
 with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
     connection.login(user=my_email, password=my_pwd)
